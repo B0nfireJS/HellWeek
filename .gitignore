@@ -1,0 +1,12 @@
+*.DS_Store
+.idea/
+.vscode/
+node_modules/
+dist/
+.git_logs/
+*.map
+package-lock.json
+yarn.lock
+.directory
+!.gitkeep
+
