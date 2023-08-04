@@ -1,0 +1,45 @@
+$pfx: "promo";
+
+.#{$pfx}{
+  &__text{
+    margin-top: 170px;
+    margin-left: 120px;
+  }
+  &__title{
+    letter-spacing: -3.1px;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 130%;
+    margin-bottom: 7px;
+  }
+  &__description{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 81px;
+  }
+  &__view{
+    font-weight: 700;
+    font-size: 20px;
+    padding: 13px 56px;
+    border-radius: 0px 10px;
+    border: 2px solid #F3FBC0;
+    margin-bottom: 88px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  &__view::before{
+    // Доделать
+    content: "";
+    border: 2px solid #F3FBC0;
+    filter: blur(2px);
+  }
+  &__socials{
+    list-style: none;
+    padding: 0;
+  }
+  &__social-item{
+    margin-right: 29px;
+  }
+  &__social-item:last-child{
+    margin-right: 0;
+  }
+}
