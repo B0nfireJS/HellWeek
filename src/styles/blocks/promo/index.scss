@@ -1,6 +1,20 @@
 $pfx: "promo";
 
 .#{$pfx}{
+  margin-bottom: 56px;
+  &__img-continer{
+    position: relative;
+  }
+  &__img-continer::before{
+    content: "";
+    z-index: 10;
+    width: 100%;
+    display: block;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    height: 30%;
+    bottom: -3px;
+  }
   &__text{
     margin-top: 170px;
     margin-left: 120px;
@@ -24,13 +38,7 @@ $pfx: "promo";
     border-radius: 0px 10px;
     border: 2px solid #F3FBC0;
     margin-bottom: 88px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  }
-  &__view::before{
-    // Доделать
-    content: "";
-    border: 2px solid #F3FBC0;
-    filter: blur(2px);
+    box-shadow:0 0 8px #F3FBC0;
   }
   &__socials{
     list-style: none;

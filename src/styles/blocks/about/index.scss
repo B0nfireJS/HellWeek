@@ -1,0 +1,52 @@
+$pfx: "about";
+
+.#{$pfx}{
+  position: relative;
+  margin-bottom: 170px;
+  &__wrapper{
+    position: relative;
+    padding: 212px 88px;
+    border-radius: 52px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 1px 40px 0px rgba(226, 226, 226, 0.20) inset, 0px 4px 16px 0px rgba(233, 233, 233, 0.20) inset;
+    overflow: hidden;
+  }
+  &__wrapper::after{
+    content: "";
+    width: 796px;
+    height: 796px;
+    background: #89C7FF;
+    bottom: -481px;
+    right: -321px;
+    filter: blur(103.5px);
+    position: absolute;
+    z-index: -1;
+    transform: rotate(313deg);
+  }
+  &__title{
+    font-family: $font-family-Press-Start;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
+  &__text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 154.023%;
+    max-width: 740px;
+  }
+  &__img-1{
+    position: absolute;
+    right: 41px;
+    top: 60px;
+  }
+  &__img-2{
+    position: absolute;
+    right: 367px;
+    top: 322px;
+  }
+  &__img-3{
+    position: absolute;
+    right: 330px;
+    bottom: -91px;
+  }
+}

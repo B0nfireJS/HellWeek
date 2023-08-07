@@ -1,0 +1,43 @@
+$pfx: "projects";
+
+.#{$pfx}{
+  align-items: center;
+  margin-bottom: 171px;
+  &__title{
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.61);
+    text-align: center;
+    margin-bottom: 88px;
+  }
+  .swiper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slide{
+    max-width: 996px;
+    border-radius: 10px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    transform: scale(1);
+    transition: 0.8s;
+    img{
+      width: 100%;
+      border-radius: 30px;
+    }
+  }
+  .swiper-slide:not(.swiper-slide-active) {
+    filter: blur(5.5px);
+    
+    // width: 871px;
+    // height: 437px;
+    transform: scale(0.9);
+  }
+  // swiper-slide {
+  //   &:not(:last-child){
+  //     margin-right: 40px;
+  //   }
+  // }
+}

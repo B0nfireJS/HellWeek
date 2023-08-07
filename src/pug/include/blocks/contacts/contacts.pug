@@ -1,0 +1,8 @@
+include ../../data/contacts-data.pug
+  section.contacts
+    .contacts__wrapper
+      h2.contacts__title Контакты
+      p.contacts__description Свяжитесь с нами любым удобным для вас способом
+      .contacts__cards
+        each item in contactsList
+          +contact-card(item.href,item.icon,item.text)
