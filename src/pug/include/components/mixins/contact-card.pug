@@ -1,6 +1,5 @@
-include ../../data/contacts-data.pug
-  mixin contact-card(link,icon,text)
-    article.contact-card
-      a(href=link).contact-card__link
-        img(src=icon, alt=icon).contact-card__icon
-      span.contact-card__text=text
+mixin contact-card(link,icon,text)
+  article.contact-card.d-flex.v-center.f-column
+    a(href=link).contact-card__link
+      img(src=icon, alt=icon).contact-card__icon
+    a(href=link).contact-card__text=text

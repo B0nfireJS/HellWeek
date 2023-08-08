@@ -32,6 +32,7 @@ $pfx: "promo";
     margin-bottom: 81px;
   }
   &__view{
+    transition: 0.3s;
     font-weight: 700;
     font-size: 20px;
     padding: 13px 56px;
@@ -39,6 +40,10 @@ $pfx: "promo";
     border: 2px solid #F3FBC0;
     margin-bottom: 88px;
     box-shadow:0 0 8px #F3FBC0;
+  }
+  &__view:hover{
+    background-color: #F3FBC0;
+    color: #000;
   }
   &__socials{
     list-style: none;
@@ -49,5 +54,12 @@ $pfx: "promo";
   }
   &__social-item:last-child{
     margin-right: 0;
+  }
+  &__social-icon{
+    transition: 0.3s;
+    border-radius: 50%;
+  }
+  &__social-icon:hover{
+    box-shadow: 0 0 45px rgba(255, 255, 255, 0.7);
   }
 }

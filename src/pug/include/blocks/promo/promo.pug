@@ -1,20 +1,16 @@
-section.promo
-  .promo__wrapper.container.d-flex
-    .promo__img-continer
-      img.promo__img(src="../../../../assets/promo.png", alt="promo")
-    .promo__text
-      h1.promo__title Разработка мобильных приложений и игр
-      p.promo__description Разрабатываем продукты, которые используют миллионы
-      a.promo__view.d-inline-block Смотреть
-      ul.promo__socials.d-flex.h-end
-        li.promo__social-item
-          a.promo__social__link(href="https://vk.com/frog_company" target="_blank")
-            img(src="../../../../assets/vk.svg", alt="vk")
-        li.promo__social-item
-          a.promo__social__link(href="mailto:frogcompany@mail.ru" target="_blank")
-            img(src="../../../../assets/gmail.svg", alt="gmail")
-        li.promo__social-item
-          a.promo__social__link(href="https://t.me/frogcompany")
-            img(src="../../../../assets/telegram.svg", alt="telegram" target="_blank")
+include ../../data/contacts-data.pug
+  section.promo
+    .promo__wrapper.container.d-flex
+      .promo__img-continer
+        img.promo__img(src="../../../../assets/promo.png", alt="promo")
+      .promo__text
+        h1.promo__title Разработка мобильных приложений и игр
+        p.promo__description Разрабатываем продукты, которые используют миллионы
+        a(href="#projects").promo__view.d-inline-block.no-underline Смотреть
+        ul.promo__socials.d-flex.h-end
+          each item in contactsList
+            li.promo__social-item
+              a.promo__social-link(href=item.href)
+                img.promo__social-icon(src=item.icon, alt=item.text)
 
         

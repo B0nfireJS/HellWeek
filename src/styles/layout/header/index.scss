@@ -16,6 +16,10 @@ $pfx: "header";
   &__nav-item{
     margin-right: 25px;
   }
+  &__nav-item:hover{
+    color: #dcee64;
+    transition: 0.3s;
+  }
   &__nav-item:last-child{
     margin-right: 0;
   }

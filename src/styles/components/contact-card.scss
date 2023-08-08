@@ -1,0 +1,15 @@
+$pfx: "contact-card";
+
+.#{$pfx}{
+  &__icon{
+    width: 96px;
+    height: 96px;
+    margin-bottom: 28px;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+  }
+  &__text{
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
