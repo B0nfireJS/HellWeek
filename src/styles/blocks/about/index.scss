@@ -3,24 +3,17 @@ $pfx: "about";
 .#{$pfx}{
   position: relative;
   margin-bottom: 170px;
+  width: 100%;
+  z-index: 5;
   &__wrapper{
+    width: 100%;
     position: relative;
+    z-index: 5;
     padding: 212px 88px;
     border-radius: 52px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 1px 40px 0px rgba(226, 226, 226, 0.20) inset, 0px 4px 16px 0px rgba(233, 233, 233, 0.20) inset;
-    overflow: hidden;
-  }
-  &__wrapper::after{
-    content: "";
-    width: 796px;
-    height: 796px;
-    background: #89C7FF;
-    bottom: -481px;
-    right: -321px;
-    filter: blur(103.5px);
-    position: absolute;
-    z-index: -1;
-    transform: rotate(313deg);
+    // overflow: hidden;
+    background-color: #000;
   }
   &__title{
     font-family: $font-family-Press-Start;
@@ -36,17 +29,51 @@ $pfx: "about";
   }
   &__img-1{
     position: absolute;
-    right: 41px;
+    right: -80px;
     top: 60px;
+    z-index: 2;
   }
   &__img-2{
     position: absolute;
     right: 367px;
     top: 322px;
+    z-index: 2;
   }
   &__img-3{
     position: absolute;
     right: 330px;
     bottom: -91px;
+    z-index: 2;
+  }
+  &__overlay{
+    // display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 52px;
+  }
+  &__overlay::after{
+    content: "";
+    // width: 100%;
+    width: 796px;
+    height: 796px;
+    background: #89C7FF;
+    bottom: -481px;
+    right: -321px;
+    filter: blur(103.5px);
+    position: absolute;
+    transform: rotate(313deg);
+    // overflow: hidden;
+  }
+  &__bg-img1{
+    position: absolute;
+    top: -61px;
+    left: -3px;
+    z-index: 1;
+    opacity: 0.4;
   }
 }

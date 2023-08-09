@@ -2,8 +2,11 @@ $pfx: "promo";
 
 .#{$pfx}{
   margin-bottom: 56px;
+  position: relative;
+  z-index: 5;
   &__img-continer{
     position: relative;
+    z-index: 4;
   }
   &__img-continer::before{
     content: "";
@@ -16,6 +19,8 @@ $pfx: "promo";
     bottom: -3px;
   }
   &__text{
+    position: relative;
+    z-index: 5;
     margin-top: 170px;
     margin-left: 120px;
   }
@@ -32,7 +37,8 @@ $pfx: "promo";
     margin-bottom: 81px;
   }
   &__view{
-    transition: 0.3s;
+    position: relative;
+    z-index: 5;
     font-weight: 700;
     font-size: 20px;
     padding: 13px 56px;
@@ -42,6 +48,7 @@ $pfx: "promo";
     box-shadow:0 0 8px #F3FBC0;
   }
   &__view:hover{
+    transition: 0.3s;
     background-color: #F3FBC0;
     color: #000;
   }
@@ -61,5 +68,38 @@ $pfx: "promo";
   }
   &__social-icon:hover{
     box-shadow: 0 0 45px rgba(255, 255, 255, 0.7);
+  }
+  &__bg-img1{
+    position: absolute;
+    top: -79px;
+    z-index: 1;
+    left: -275px;
+    opacity: 0.4;
+  }
+  &__bg-img2{
+    position: absolute;
+    z-index: 1;
+    top: -66px;
+    right: 358px;
+    opacity: 0.4;
+  }
+  &__bg-img3{
+    position: absolute;
+    z-index: 1;
+    top: -229px;
+    right: -107px;
+  }
+  &__bg-img4{
+    position: absolute;
+    z-index: 1;
+    top: 188px;
+    left: 410px;
+  }
+  &__bg-img5{
+    position: absolute;
+    z-index: 1;
+    bottom: -169px;
+    right: 39px;
+    opacity: 0.3;
   }
 }
