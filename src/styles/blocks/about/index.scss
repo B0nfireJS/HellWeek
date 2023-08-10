@@ -9,19 +9,23 @@ $pfx: "about";
     width: 100%;
     position: relative;
     z-index: 5;
-    padding: 212px 88px;
+    padding: 196px 88px;
     border-radius: 52px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 1px 40px 0px rgba(226, 226, 226, 0.20) inset, 0px 4px 16px 0px rgba(233, 233, 233, 0.20) inset;
     // overflow: hidden;
     background-color: #000;
   }
   &__title{
+    position: relative;
+    z-index: 5;
     font-family: $font-family-Press-Start;
     font-size: 40px;
     font-weight: 400;
-    margin-bottom: 24px;
+    margin-bottom: 6px;
   }
   &__text{
+    position: relative;
+    z-index: 5;
     font-size: 16px;
     font-weight: 400;
     line-height: 154%;
@@ -29,20 +33,20 @@ $pfx: "about";
   }
   &__img-1{
     position: absolute;
-    right: -80px;
-    top: 60px;
+    right: -151px;
+    top: 55px;
     z-index: 2;
   }
   &__img-2{
     position: absolute;
-    right: 367px;
-    top: 322px;
+    right: 176px;
+    top: 317px;
     z-index: 2;
   }
   &__img-3{
     position: absolute;
-    right: 330px;
-    bottom: -91px;
+    right: 140px;
+    bottom: -94px;
     z-index: 2;
   }
   &__overlay{
@@ -58,7 +62,7 @@ $pfx: "about";
   }
   &__overlay::after{
     content: "";
-    // width: 100%;
+    border-radius: 50%;
     width: 796px;
     height: 796px;
     background: #89C7FF;
@@ -73,6 +77,13 @@ $pfx: "about";
     position: absolute;
     top: -61px;
     left: -3px;
+    z-index: 1;
+    opacity: 0.4;
+  }
+  &__bg-img2{
+    position: absolute;
+    bottom: -402px;
+    left: -99px;
     z-index: 1;
     opacity: 0.4;
   }
