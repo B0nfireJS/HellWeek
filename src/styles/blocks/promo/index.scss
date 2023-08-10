@@ -7,16 +7,25 @@ $pfx: "promo";
   &__img-continer{
     position: relative;
     z-index: 4;
+    max-width: 485px;
+    width: 100%;
+    // height: 100%;
+    // width: auto;
+    // width: 100%;
   }
   &__img-continer::before{
     content: "";
     z-index: 10;
+    max-width: 485px;
     width: 100%;
     display: block;
     position: absolute;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
     height: 30%;
     bottom: -3px;
+  }
+  .promo__img{
+    width: 100%;
   }
   &__text{
     position: relative;
@@ -30,6 +39,9 @@ $pfx: "promo";
     font-weight: 900;
     line-height: 130%;
     margin-bottom: 7px;
+    @media (max-width: 992px) {
+      font-size: 36px;
+    }
   }
   &__description{
     font-size: 16px;
