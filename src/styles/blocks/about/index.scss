@@ -3,10 +3,13 @@ $pfx: "about";
 .#{$pfx}{
   position: relative;
   margin-bottom: 170px;
-  width: 100%;
+  @media (max-width: 420px){
+    margin-bottom: 80px;
+  }
+  // width: 100%;
   z-index: 5;
   &__wrapper{
-    width: 100%;
+    // width: 100%;
     position: relative;
     z-index: 5;
     padding: 196px 88px;
@@ -14,6 +17,16 @@ $pfx: "about";
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 1px 40px 0px rgba(226, 226, 226, 0.20) inset, 0px 4px 16px 0px rgba(233, 233, 233, 0.20) inset;
     // overflow: hidden;
     background-color: #000;
+    @media (max-width: 992px){
+      padding: 130px 88px;
+    }
+    @media (max-width: 600px){
+      padding: 70px 44px;
+      border-radius: 24px;
+    }
+    @media (max-width: 420px){
+      padding: 38px 22px;
+    }
   }
   &__title{
     position: relative;
@@ -22,6 +35,14 @@ $pfx: "about";
     font-size: 40px;
     font-weight: 400;
     margin-bottom: 6px;
+    @media (max-width: 992px){
+      font-size: 32px;
+    }
+    @media (max-width: 600px){
+      font-size: 24px;
+    }@media (max-width: 420px){
+      font-size: 16px;
+    }
   }
   &__text{
     position: relative;
@@ -30,24 +51,56 @@ $pfx: "about";
     font-weight: 400;
     line-height: 154%;
     max-width: 740px;
+    @media (max-width: 992px){
+      font-size: 14px;
+    }
+    @media (max-width: 420px){
+      font-size: 12px;
+    }
   }
   &__img-1{
     position: absolute;
     right: -151px;
     top: 55px;
     z-index: 2;
+    @media (max-width: 1200px) {
+      width: 200px;
+      right: -100px;
+    }
+    @media (max-width: 992px) {
+      // width: 200px;
+      right: -125px;
+    }
+    @media (max-width: 420px) {
+      width: 40px;
+      right: -18px;
+      bottom: 50px;
+      top: auto;
+    }
   }
   &__img-2{
     position: absolute;
     right: 176px;
     top: 317px;
     z-index: 2;
+    @media (max-width: 1200px) {
+      display: none;
+    }
   }
   &__img-3{
     position: absolute;
     right: 140px;
     bottom: -94px;
     z-index: 2;
+    @media (max-width: 1200px) {
+      width: 170px;
+      bottom: -70px;
+    }
+    @media (max-width: 420px) {
+      width: 47px;
+      bottom: -20px;
+      left: 20px;
+    }
   }
   &__overlay{
     // display: none;
@@ -59,12 +112,15 @@ $pfx: "about";
     height: 100%;
     overflow: hidden;
     border-radius: 52px;
+    @media (max-width: 600px){
+      border-radius: 24px;
+    }
   }
   &__overlay::after{
     content: "";
     border-radius: 50%;
-    width: 796px;
-    height: 796px;
+    width: 900px;
+    height: 900px;
     background: #89C7FF;
     bottom: -481px;
     right: -321px;
@@ -72,6 +128,24 @@ $pfx: "about";
     position: absolute;
     transform: rotate(313deg);
     // overflow: hidden;
+    // background-color: #000; ///
+    @media (max-width: 992px){
+      width: 800px;
+      height: 800px;
+    }
+    @media (max-width: 600px){
+      width: 600px;
+      height: 600px;
+      bottom: -361px;
+      right: -256px;
+    }
+    @media (max-width: 420px){
+      opacity: 0.5;
+      width: 450px;
+      height: 450px;
+      bottom: -95px;
+      right: -167px;
+    }
   }
   &__bg-img1{
     position: absolute;
@@ -86,5 +160,15 @@ $pfx: "about";
     left: -99px;
     z-index: 1;
     opacity: 0.4;
+  }
+  &__bg-img-blue{
+    display: none; ///временно
+    width: 880px;
+    height: 880px;
+    position: absolute;
+    bottom: -402px;
+    right: -345px;
+    z-index: 1;
+    opacity: 1;
   }
 }

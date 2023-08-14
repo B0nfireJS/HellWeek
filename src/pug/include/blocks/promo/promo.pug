@@ -4,10 +4,11 @@ include ../../data/contacts-data.pug
       .promo__img-continer
         img.promo__img.not-use(src="../../../../assets/promo.png", alt="promo")
       .promo__text
+        img.promo__logo(src="../../../../assets/logo.svg", alt="logo")
         h1.promo__title Разработка мобильных приложений и игр
         p.promo__description Разрабатываем продукты, которые используют миллионы
         a(href="#projects").promo__view.d-inline-block.no-underline Смотреть
-        ul.promo__socials.d-flex.h-end
+        ul.promo__socials
           each item in contactsList
             li.promo__social-item
               a.promo__social-link(href=item.href)

@@ -1,8 +1,16 @@
 include ../../data/header-data.pug
   header.header
     .header__wrapper.container
-      nav.header__nav
+      nav.header__nav.d-flex.v-center.h-end
         ul.header__nav-items.d-flex.v-center
           each link in headerNavLinks
             li.header__nav-item.d-flex
               a.header__nav-link(href=link.href).no-underline=link.text
+        .header__menu
+          span 
+          span 
+          span
+    ul.header__nav-burger
+          each link in headerNavLinks
+            li.header__nav-burger-item
+              a.header__nav-burger-link(href=link.href).no-underline=link.text

@@ -4,6 +4,7 @@ $pfx: "promo";
   margin-bottom: 56px;
   position: relative;
   z-index: 5;
+  overflow: hidden;
   &__img-continer{
     position: relative;
     z-index: 4;
@@ -12,6 +13,9 @@ $pfx: "promo";
     // height: 100%;
     // width: auto;
     // width: 100%;
+    @media (max-width:992px) {
+      display: none;
+    }
   }
   &__img-continer::before{
     content: "";
@@ -32,6 +36,29 @@ $pfx: "promo";
     z-index: 5;
     margin-top: 170px;
     margin-left: 120px;
+    @media (max-width:992px){
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-left: 0;
+      margin-top: 90px;
+    }
+  }
+  &__logo{
+    display: none;
+    @media (max-width:992px) {
+      display: block;
+      width: 450px;
+    }
+    @media (max-width:600px) {
+      display: block;
+      width: 330px;
+    }
+    @media (max-width:420px) {
+      display: block;
+      width: 160px;
+    }
   }
   &__title{
     letter-spacing: -3.1px;
@@ -41,12 +68,26 @@ $pfx: "promo";
     margin-bottom: 7px;
     @media (max-width: 992px) {
       font-size: 36px;
+      letter-spacing: 0;
+    }
+    @media (max-width: 600px) {
+      font-size: 28px;
+    }
+    @media (max-width: 420px) {
+      font-size: 16px;
     }
   }
   &__description{
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 81px;
+    @media (max-width: 600px) {
+      font-size: 14px;
+      margin-bottom: 58px;
+    }
+    @media (max-width: 420px) {
+      font-size: 13px;
+    }
   }
   &__view{
     position: relative;
@@ -58,6 +99,14 @@ $pfx: "promo";
     border: 2px solid #F3FBC0;
     margin-bottom: 88px;
     box-shadow:0 0 8px #F3FBC0;
+    @media (max-width: 600px) {
+      font-size: 16px;
+      padding: 13px 48px;
+    }
+    @media (max-width: 420px) {
+      font-size: 13px;
+      padding: 13px 42px;
+    }
   }
   &__view:hover{
     transition: 0.3s;
@@ -67,6 +116,11 @@ $pfx: "promo";
   &__socials{
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
   &__social-item{
     margin-right: 29px;

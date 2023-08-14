@@ -18,4 +18,14 @@ const swiper = new Swiper('.swiper', {
   centeredSlides: true,
   speed: 600,
   // centeredSlidesBounds: true
+  breakpoints: {
+    320:{
+      slidesPerView: "1.2",
+      spaceBetween: -5,
+    },
+    992:{
+      slidesPerView: "auto",
+      spaceBetween: -20,
+    }
+  }
 });
