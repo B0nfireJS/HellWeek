@@ -5,7 +5,16 @@ $pfx: "footer";
   @media (max-width: 600px) {
     padding-bottom: 21px;
   }
+  &__wrapper{
+    align-items: center;
+    @media (max-width: 420px){
+      align-items: flex-start;
+    }
+  }
   &__logo{
+    @media (max-width: 992px) {
+      width: 120px;
+    }
     @media (max-width: 600px) {
       width: 100px;
     }

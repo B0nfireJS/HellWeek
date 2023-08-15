@@ -3,19 +3,17 @@ $pfx: "about";
 .#{$pfx}{
   position: relative;
   margin-bottom: 170px;
+  overflow-x: clip;
   @media (max-width: 420px){
     margin-bottom: 80px;
   }
-  // width: 100%;
   z-index: 5;
   &__wrapper{
-    // width: 100%;
     position: relative;
     z-index: 5;
     padding: 196px 88px;
     border-radius: 52px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 1px 40px 0px rgba(226, 226, 226, 0.20) inset, 0px 4px 16px 0px rgba(233, 233, 233, 0.20) inset;
-    // overflow: hidden;
     background-color: #000;
     @media (max-width: 992px){
       padding: 130px 88px;
@@ -71,6 +69,10 @@ $pfx: "about";
       // width: 200px;
       right: -125px;
     }
+    @media (max-width: 600px){
+      width: 120px;
+      right: -64px;
+    }
     @media (max-width: 420px) {
       width: 40px;
       right: -18px;
@@ -95,6 +97,10 @@ $pfx: "about";
     @media (max-width: 1200px) {
       width: 170px;
       bottom: -70px;
+    }
+    @media (max-width: 600px){
+      width: 100px;
+      bottom: -50px;
     }
     @media (max-width: 420px) {
       width: 47px;
