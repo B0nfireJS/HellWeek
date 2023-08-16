@@ -68,14 +68,12 @@ $pfx: "promo";
     }
   }
   &__title{
-    letter-spacing: -3.1px;
     font-size: 48px;
     font-weight: 900;
     line-height: 130%;
     margin-bottom: 7px;
     @media (max-width: 992px) {
       font-size: 36px;
-      letter-spacing: 0;
     }
     @media (max-width: 600px) {
       font-size: 28px;

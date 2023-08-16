@@ -89,7 +89,7 @@ const conf = {
   resolve: {
     alias: {
       '@assets': assets,
-      '@components': path.resolve(__dirname, '../../src/js/components/'),
+      '@components': path.resolve(__dirname, '../../src/js//'),
       '@utils': path.resolve(__dirname, '../../src/js/utils/'),
     },
     extensions: ['.js', '.json'],

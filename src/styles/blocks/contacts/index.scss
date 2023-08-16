@@ -58,7 +58,7 @@ $pfx: "contacts";
     position: absolute;
     bottom: -187px;
     right: -358px;
-    z-index: 1;
+    z-index: -1;
     opacity: 0.4;
     transform: rotate(180deg);
   }
