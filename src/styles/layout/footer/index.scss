@@ -1,36 +1,5 @@
 $pfx: "footer";
 
 .#{$pfx}{
-  padding-bottom: 70px;
-  @media (max-width: 600px) {
-    padding-bottom: 21px;
-  }
-  &__wrapper{
-    align-items: center;
-    @media (max-width: 420px){
-      align-items: flex-start;
-    }
-  }
-  &__logo{
-    @media (max-width: 992px) {
-      width: 120px;
-    }
-    @media (max-width: 600px) {
-      width: 100px;
-    }
-    @media (max-width: 420px) {
-      width: 38px;
-    }
-  }
-  &__nav-item{
-    margin-right: 26px;
-    font-size: 16px;
-    font-weight: 600;
-    @media (max-width: 420px) {
-      font-size: 10px;
-    }
-  }
-  &__nav-item:last-child{
-    margin-right: 0;
-  }
+  
 }

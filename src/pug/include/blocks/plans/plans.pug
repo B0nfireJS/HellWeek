@@ -1,0 +1,74 @@
+-
+  var planInfo = [
+    {
+      square: "23.33 м²",
+      house: "2",
+      floor: "14",
+      cost: "от 7 894 940 ₽",
+    },
+    {
+      square: "26.3 м²",
+      house: "3",
+      floor: "11",
+      cost: "от 8 252 940 ₽",
+    },
+    {
+      square: "25.3 м²",
+      house: "1",
+      floor: "5",
+      cost: "от 8 445 180 ₽",
+    },
+    {
+      square: "23.65 м²",
+      house: "4",
+      floor: "10",
+      cost: "от 8 905 600 ₽",
+    },
+    {
+      square: "24.6 м²",
+      house: "1",
+      floor: "7",
+      cost: "от 8 445 180 ₽",
+    },
+  ]
+
+section.plans
+  .plans__wrapper.container
+    h2.plans__title Планировки
+    .plans__tabs 
+      .plans__tabs-nav
+        button.plans__tabs-btn.plans__tabs-btn-active Студии
+        button.plans__tabs-btn 1-комнатные
+        button.plans__tabs-btn 2-комнатные
+        button.plans__tabs-btn 3-комнатные
+      .plans__tabs-content
+        .plans__tabs-pane.plans__tabs-pane-show
+          .swiper
+            .swiper-wrapper
+              each item in planInfo
+                .swiper-slide.d-flex
+                  img(src="../../../../assets/plan-picture.png", alt="plan-picture").plans__img
+                  .plans__plan-info
+                    table.plans__plan-table
+                      tr.plans__plan-table-row
+                        th.plans__plan-table-header Общая площадь
+                        th.plans__plan-table-header Дом
+                        th.plans__plan-table-header Этаж
+                        th.plans__plan-table-header Цена
+                      tr.plans__plan-table-row
+                        td.plans__plan-table-cell=item.square
+                        td.plans__plan-table-cell=item.house
+                        td.plans__plan-table-cell=item.floor
+                        td.plans__plan-table-cell.plans__plan-table-cell-cost=item.cost
+                    form.plans__form
+                      .plans__form-row.d-flex
+                        input.plans__form-input(type="text", placeholder="+7 (___) ___-__-__").plans__inpit
+                        button.plans__form-button Отправить заявку
+                      span.plans__form-description Отправляя форму, вы соглашаетесь на обработку персональных данных
+            .swiper-pagination
+            .swiper-button-prev
+            .swiper-button-next
+        .plans__tabs-pane Вкладка 2
+        .plans__tabs-pane Вкладка 3
+        .plans__tabs-pane Вкладка 4
+        .plans__tabs-pane Вкладка 5

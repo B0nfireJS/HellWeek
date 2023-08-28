@@ -23,8 +23,8 @@ $spacers: map-merge((
     128: 128,
 ), $spacers);
 
-$font-family-Intro: 'Inter', "Helvetica Neue", Arial, sans-serif !default;
-$font-family-Press-Start: 'Press Start', "Helvetica Neue", Arial, sans-serif !default;
+$font-family-OpenSans: 'Open Sans', "Helvetica Neue", Arial, sans-serif !default;
+
 
 $colors: (
     "light": var(--color-light),

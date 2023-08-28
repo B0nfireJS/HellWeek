@@ -1,9 +1,0 @@
-include ../../data/contacts-data.pug
-  section.contacts#contacts
-    .contacts__wrapper.d-flex.v-center.f-column
-      h2.contacts__title Контакты
-      p.contacts__description Свяжитесь с нами любым удобным для вас способом
-      .contacts__cards.d-flex.h-between
-        each item in contactsList
-          +contact-card(item.href,item.icon,item.text)
-      img.contacts__bg-img1.non-select(src="../../../../assets/bg-img1.png", alt="bg-img")
