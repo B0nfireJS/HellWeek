@@ -5,32 +5,41 @@
       house: "2",
       floor: "14",
       cost: "от 7 894 940 ₽",
+      id: "8709aa1e2a3ead78bd9207796b7bda0b",
     },
     {
       square: "26.3 м²",
       house: "3",
       floor: "11",
       cost: "от 8 252 940 ₽",
+      id: "c340fb7b8ea2e1e3f75c84e5b93d3e57",
     },
     {
       square: "25.3 м²",
       house: "1",
       floor: "5",
       cost: "от 8 445 180 ₽",
+      id: "bcc31f811686757d669862c8820b2999",
     },
     {
       square: "23.65 м²",
       house: "4",
       floor: "10",
       cost: "от 8 905 600 ₽",
+      id: "8709aa1e2a3ead78bd9207796b7bda0b",
     },
     {
       square: "24.6 м²",
       house: "1",
       floor: "7",
       cost: "от 8 445 180 ₽",
+      id: "bcc31f811686757d669862c8820b2999",
     },
   ]
+  const ID = planInfo.id;
+  let h = 5;
+  //- let dat = document.querySelector('#pop-widget');
+  //- console.log(dat)
 
 section.plans
   .plans__wrapper.container
@@ -47,7 +56,7 @@ section.plans
             .swiper-wrapper
               each item in planInfo
                 .swiper-slide.d-flex
-                  img(src="../../../../assets/plan-picture.png", alt="plan-picture").plans__img
+                  #pop-widget(data-id=item.id)
                   .plans__plan-info
                     table.plans__plan-table
                       tr.plans__plan-table-row
@@ -72,3 +81,4 @@ section.plans
         .plans__tabs-pane Вкладка 3
         .plans__tabs-pane Вкладка 4
         .plans__tabs-pane Вкладка 5
+        

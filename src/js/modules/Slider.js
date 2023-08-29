@@ -11,8 +11,8 @@ const swiper = new Swiper('.swiper', {
   //   prevEl: '.swiper-button-prev',
   // },
   loop: true,
-  slidesPerView: "auto",
-  spaceBetween: -20,
+  slidesPerView: "1",
+  spaceBetween: 20,
   centeredSlides: true,
   speed: 600,
   pagination: {
