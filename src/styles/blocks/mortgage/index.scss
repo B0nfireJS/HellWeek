@@ -1,0 +1,135 @@
+$pfx: "mortgage";
+
+.#{$pfx}{
+  &__wrapper{
+    position: relative;
+    overflow: hidden;
+  }
+  &__content {
+    margin-left: 650px;
+    padding: 90px 0;
+    margin-left: 675px;
+    width: 455px;
+  }
+  &__title{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 112%;
+    margin-bottom: 24px;
+  }
+  &__form{
+    display: grid;
+    grid-template-columns: 284px 150px;
+  }
+  &__input-description{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+  &__input{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 3px;
+    width: 95%;
+    margin-bottom: 37px;
+  }
+  &__input-pay-description{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+  }
+  &__input-pay{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 50px;
+  }
+  &__form-section-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  &__form-section-2{
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  &__form-section-3{
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+  &__form-section-4{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  &__form-section-5{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 65px;
+  }
+  &__info{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-size: 13px;
+    font-weight: 400;
+    width: 337px;
+    &-text{
+      color: #9AADC6;
+    }
+    &-link{
+      color: #224E9C;
+    }
+  }
+  &__form-button-view{
+    border-radius: 30px;
+    background: #FFC700;
+    border: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 0;
+    font-weight: 700;
+    font-size: 16px;
+    width: 100%;
+    // flex-wrap: nowrap;
+  }
+  &__form-button-text{
+    margin-right: 10px;
+  }
+  &__form-button-request{
+    border: none;
+    background-color: #fff;
+    color: #224E9C;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__bg-container{
+    position: absolute;
+    top: 0;
+    left: -236px;
+    z-index: -1;
+    height: 100%;
+    &::before{
+      content: "";
+      position: absolute;
+      display: block;
+      z-index: 2;
+      height: 100%;
+      width: 500px;
+      background: linear-gradient(270deg, rgba(255,255,255,1) 23%, #f5f5f5 100%);
+      margin-left: 870px;
+    }
+  }
+  &__bg{
+    position: relative;
+    height: 100%;
+  }
+}

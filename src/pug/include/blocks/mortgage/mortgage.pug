@@ -1,0 +1,29 @@
+section.mortgage
+  .mortgage__wrapper.container 
+    .mortgage__content 
+      h2.mortgage__title Ипотека от 3%
+      form(action="").mortgage__form
+        .mortgage__form-section.mortgage__form-section-1
+          span.mortgage__input-description Стоимость квартиры ₽
+          input(type="text", value="16 456 500").mortgage__input
+        .mortgage__form-section.mortgage__form-section-2
+          span.mortgage__input-description Первоначальный взнос ₽
+          input(type="text", value="2 500 000").mortgage__input
+        .mortgage__form-section.mortgage__form-section-3
+          span.mortgage__input-description Срок выплат
+          input(type="text", value="15 лет").mortgage__input
+        .mortgage__form-section.mortgage__form-section-4
+          span.mortgage__input-pay-description Ежемесячный платеж
+          span.mortgage__input-pay от 25 700 ₽/мес
+        .mortgage__form-section.mortgage__form-section-5
+          button.mortgage__form-button-view
+            span.mortgage__form-button-text Посмотреть 7 программ
+            img.mortgage__form-button-arrow(src="../../../../assets/arrow.png", alt="arrow")
+          button.mortgage__form-button-request Оставить заявку
+      .mortgage__info
+        p.mortgage__info-text Данный расчет приведен для общей информациии не является 
+          a.mortgage__info-link(href="#") публичной офертой.
+        
+    .mortgage__bg-container
+      img.mortgage__bg(src="../../../../assets/mortgage-bg.png", alt="bg")
+      
