@@ -50,10 +50,12 @@ $pfx: "mortgage";
   &__form-section-1{
     grid-column-start: 1;
     grid-column-end: 2;
+    position: relative;
   }
   &__form-section-2{
     grid-column-start: 1;
     grid-column-end: 1;
+    position: relative;
   }
   &__form-section-3{
     grid-column-start: 2;
@@ -109,6 +111,61 @@ $pfx: "mortgage";
     color: #224E9C;
     font-size: 16px;
     font-weight: 700;
+  }
+  &__input-pay{
+    border: none;
+    background-color: transparent;
+  }
+  &__cost-range{
+    position: absolute;
+    left: 0;
+    bottom: 29px;
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    // background-color: #FFC700;
+    
+  }
+  &__cost-range::-webkit-slider-runnable-track{
+    background: #FFC700;
+    height: 5px;
+    // border-radius: 50px;
+  }
+  &__cost-range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color: #FFC700;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -7.5px;
+  }
+  
+  &__payment-range{
+    position: absolute;
+    left: 0;
+    bottom: 29px;
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    // background-color: #FFC700;
+    
+  }
+  &__payment-range::-webkit-slider-runnable-track{
+    background: #FFC700;
+    height: 5px;
+    // border-radius: 50px;
+  }
+  &__payment-range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color: #FFC700;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -7.5px;
   }
 
   &__bg-container{

@@ -5,16 +5,19 @@ section.mortgage
       form(action="").mortgage__form
         .mortgage__form-section.mortgage__form-section-1
           span.mortgage__input-description Стоимость квартиры ₽
-          input(type="text", value="16 456 500").mortgage__input
+          input(type="text", value="17100000").mortgage__input.mortgage__input-cost
+          input(type="range" min="4000000" max="30000000" step="100000").mortgage__cost-range
         .mortgage__form-section.mortgage__form-section-2
           span.mortgage__input-description Первоначальный взнос ₽
-          input(type="text", value="2 500 000").mortgage__input
+          input(type="text", value="2500000").mortgage__input.mortgage__input-payment
+          input(type="range" min="1000000" max="10000000" step="50000").mortgage__payment-range
         .mortgage__form-section.mortgage__form-section-3
           span.mortgage__input-description Срок выплат
-          input(type="text", value="15 лет").mortgage__input
+          input(type="text", value="15").mortgage__input.mortgage__input-term
         .mortgage__form-section.mortgage__form-section-4
           span.mortgage__input-pay-description Ежемесячный платеж
-          span.mortgage__input-pay от 25 700 ₽/мес
+          input(type="text").mortgage__input-pay
+          //- span.mortgage__input-pay от 25 700 ₽/мес
         .mortgage__form-section.mortgage__form-section-5
           button.mortgage__form-button-view
             span.mortgage__form-button-text Посмотреть 7 программ
@@ -23,7 +26,6 @@ section.mortgage
       .mortgage__info
         p.mortgage__info-text Данный расчет приведен для общей информациии не является 
           a.mortgage__info-link(href="#") публичной офертой.
-        
     .mortgage__bg-container
       img.mortgage__bg(src="../../../../assets/mortgage-bg.png", alt="bg")
       
